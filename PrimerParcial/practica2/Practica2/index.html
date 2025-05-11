@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lema Ayala Jordan Josue</title>
+    <script>
+      function mostrarSeccion(id) {
+        document.querySelectorAll('.seccion').forEach(sec => sec.classList.add('hidden'));
+        document.getElementById(id).classList.remove('hidden');
+      }
+    </script>
+  </head>
+
+  <body class="bg-gray-100 font-sans flex flex-col min-h-screen">
+    <!-- ENCABEZADO HORIZONTAL -->
+    <header class="bg-green-600 text-white flex justify-between items-center px-8 py-4 shadow col-span-5 w-full">
+      <h1 class="text-2xl font-bold">Lema Ayala Jordan Josue</h1>
+      <img src="./src/assets/image/Gemini_Generated_Image_2a5i4x2a5i4x2a5i.jpg" alt="Logo" class="h-10 w-10 rounded-full border-2 border-white" />
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="flex flex-1 grid grid-cols-6">
+
+      <!-- MENÚ LATERAL -->
+      <aside class="w-64 bg-gray-200 p-6 space-y-4">
+        <button onclick="mostrarSeccion('habilidades')" class="block px-4 py-2 text-green-700 font-semibold rounded hover:bg-gray-300 transition w-full text-left">Habilidades</button>
+        <button onclick="mostrarSeccion('proyectos')" class="block px-4 py-2 text-green-700 font-semibold rounded hover:bg-gray-300 transition w-full text-left">Proyectos</button>
+        <button onclick="mostrarSeccion('contacto')" class="block px-4 py-2 text-green-700 font-semibold rounded hover:bg-gray-300 transition w-full text-left">Contacto</button>
+      </aside>
+
+      <!-- ÁREA DE CONTENIDO -->
+      <main class="flex-1 p-8 space-y-10 bg-white col-span-5">
+        <!-- SECCIÓN HABILIDADES -->
+        <section id="habilidades" class="seccion grid-span-4 ">
+          <h2 class="text-2xl font-bold mb-4 text-green-700">Habilidades</h2>
+          <ul class="grid grid-cols-2 gap-4 list-disc pl-5 text-gray-700">
+            <li>Python</li>
+            <li>SQL Server</li>
+            <li>C++</li>
+            <li>CSS</li>
+          </ul>
+        </section>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section id="proyectos" class="seccion hidden">
+          <h2 class="text-2xl font-bold mb-4 text-green-700">Proyectos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-white p-5 rounded shadow hover:shadow-md transition">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Sistema de Restaurante</h3>
+              <p class="text-gray-600">Gestión de pedidos, menú, clientes.</p>
+            </div>
+            <div class="bg-white p-5 rounded shadow hover:shadow-md transition">
+              <h3 class="text-lg font-semibold text-gray-800 mb-2">Administración de Cine</h3>
+              <p class="text-gray-600">Reservas, funciones y usuarios para cine.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="seccion hidden">
+          <h2 class="text-2xl font-bold mb-4 text-green-700">Contacto</h2>
+          <div class="bg-gray-100 p-6 rounded shadow text-gray-800 space-y-2">
+            <p><strong>Nombre:</strong> Lema Ayala Jordan Josue</p>
+            <p><strong>Correo:</strong> joseaalaba8989@gmail.com</p>
+            <p><strong>Teléfono:</strong> 0998005707</p>
+          </div>
+        </section>
+
+      </main>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-green-600 text-white text-center p-3 col-span-6 w-full">
+      <p class="text-sm">© 2025 Lema Ayala Jordan Josue</p>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
