@@ -1,0 +1,61 @@
+/* Estilos para el contenedor principal del resumen */
+.form-card {
+  background-color: #ffffff;
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 700px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Estilos para el título principal */
+.form-card h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a61b2d;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+/* Estilos para los subtítulos de las secciones */
+.form-card h3 {
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-top: 2rem;
+  border-bottom: 2px solid #a61b2d;
+  padding-bottom: 0.5rem;
+}
+
+/* Estilos para los párrafos con los detalles */
+.form-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+/* Estilos para el botón de acción */
+.submit-button {
+  width: 100%;
+  padding: 1.25rem;
+  background-color: #a61b2d;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 2rem;
+}
+
+.submit-button:hover {
+  background-color: #7a1421;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}

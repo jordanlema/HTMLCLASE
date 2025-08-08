@@ -1,0 +1,68 @@
+{
+  "carreras": [
+    {
+      "id": "carrera-001",
+      "nombre": "Carrera por la Ciudad",
+      "tipo_de_carrera": "10k",
+      "fecha": "2025-08-20"
+    },
+    {
+      "id": "carrera-002",
+      "nombre": "Media Maratón Manta",
+      "tipo_de_carrera": "21k",
+      "fecha": "2025-09-15"
+    }
+  ],
+  "participantes": [
+    {
+      "id": "participante-001",
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "correo": "juan.perez@example.com",
+      "telefono": "123456789",
+      "talla_camiseta": "M"
+    },
+    {
+      "id": "participante-002",
+      "nombre": "Ana",
+      "apellido": "Gómez",
+      "correo": "ana.gomez@example.com",
+      "telefono": "987654321",
+      "talla_camiseta": "S"
+    }
+  ],
+  "inscripciones": [
+    {
+      "id": "inscripcion-001",
+      "id_carrera": "carrera-001",
+      "participante": {
+        "id": "participante-001",
+        "nombre": "Juan",
+        "apellido": "Pérez",
+        "correo": "juan.perez@example.com",
+        "telefono": "123456789",
+        "talla_camiseta": "M"
+      },
+      "pago": {
+        "metodo_pago": "Tarjeta de Crédito",
+        "total": 50.00
+      }
+    },
+    {
+      "id": "inscripcion-002",
+      "id_carrera": "carrera-002",
+      "participante": {
+        "id": "participante-002",
+        "nombre": "Ana",
+        "apellido": "Gómez",
+        "correo": "ana.gomez@example.com",
+        "telefono": "987654321",
+        "talla_camiseta": "S"
+      },
+      "pago": {
+        "metodo_pago": "PayPal",
+        "total": 75.00
+      }
+    }
+  ]
+}

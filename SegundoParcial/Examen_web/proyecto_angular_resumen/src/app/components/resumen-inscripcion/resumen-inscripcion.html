@@ -1,0 +1,20 @@
+<div class="form-card" *ngIf="inscripcion">
+  <h2>Resumen de la inscripción</h2>
+  
+  <h3>Detalles de la carrera</h3>
+  <p>Tipo de carrera: Carrera 5k</p>
+  <p>Fecha del evento: 20 de Agosto, 2025</p>
+
+  <h3>Detalles del participante</h3>
+  <p>Nombre: {{ inscripcion.participante.nombre }} {{ inscripcion.participante.apellido }}</p>
+  <p>Correo: {{ inscripcion.participante.correo }}</p>
+  <p>Talla de camiseta: {{ inscripcion.participante.talla_camiseta }}</p>
+
+  <h3>Método de pago</h3>
+  <p>{{ inscripcion.pago.metodo_pago }}</p>
+
+  <h3>Resumen del pago</h3>
+  <p>Total a pagar: ${{ inscripcion.pago.total }}</p>
+
+  <button class="submit-button" (click)="completarInscripcion()">Completar inscripción</button>
+</div>
